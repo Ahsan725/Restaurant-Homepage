@@ -1,0 +1,157 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: #f9c426;
+    
+  }
+  
+  /* Apply some basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9c426;
+    line-height: 1.6rem;
+  }
+  
+  .container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    
+    
+    /* New styling for .container */
+    max-width: 900px;
+    min-height: 50vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas: "header" "main" "left" "right" "footer";
+  }
+  
+  /* Add media rules for container class below */
+  @media (min-width: 768px) {
+    .container {
+      /* Add rules here */
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: "header header" "main main" "left right" "footer footer";
+    }
+  }
+  
+  .header {
+    background-color: #f9c426;
+    padding: 1rem;
+    text-align: center;
+    grid-area: header;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: larger;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 2.5rem;
+    font-size: 200%;
+    
+  }
+  
+  nav ul li a:hover {
+    color: #f9c426;
+    
+    
+  }
+  
+  main section {
+    margin-bottom: 2rem;
+    grid-area: main;
+  }
+  
+  article {
+    background-color: #f9c426;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    background-color: #f5f5f5;
+    background-color: #f9c426;
+    padding: 1rem;
+    text-align: center;
+    grid-area: footer;
+  }
+  
+  /* Adjust the size of the logo image */
+  .header img {
+    min-width: 250px !important;
+    height: auto;
+    background-color: #f9c426;
+  }
+  .footer img {
+    /* width: 10%; */
+    height: 2%;
+    max-width: 5%;
+    /* display: block; */
+  }
+
+  .jumbotron {
+    font-size: large;
+    background-color: #f9c426;
+  }
+  
+  /* Add styling for headings */
+  h1 {
+    font-size: 50rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* New styles for heading 2 and 3 */
+  h2,
+  h3 {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    h2,
+    h3 {
+      width: 50%;
+    }
+  }
+
+  .container-fluid{
+    background-color: #f9c426;
+  }
+
+  .btn{
+    background-color: #425f59 !important;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.3);
+  }
+  .custom-text-color{
+    color: none !important;
+  }
+
+  
+  
