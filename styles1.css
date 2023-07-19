@@ -2,38 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: #f9c426;
-    
+    background-color: #f9c426;
   }
+  
   body {
     font-family: Arial, sans-serif;
-    background-color: #f9c426;
     line-height: 1.6rem;
   }
-  
-  /* .container {
-    max-width: 60rem;
-    margin: 0 auto;
-    max-width: 900vw;
-    min-height: 50vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto auto;
-    grid-template-areas: "header" "main" "left" "right" "footer";
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 1fr auto;
-      grid-template-areas: "header header" "main main" "left right" "footer footer";
-    }
-  } */
   
   .header {
     background-color: #f9c426;
     padding: 1rem;
     text-align: center;
-    grid-area: header;
+  }
+  
+  .navbar-toggler {
+    display: none;
+  }
+  .jumbotron img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-height: 500px;
   }
   
   nav ul {
@@ -56,53 +48,36 @@
     color: #ffffff;
     padding: 2.5rem;
     font-size: 200%;
-    
   }
   
   nav ul li a:hover {
     color: #f9c426;
-    
-    
   }
   
   main section {
     margin-bottom: 2rem;
-    grid-area: main;
   }
   
-  article {
-    background-color: #f9c426;
-    padding: 2rem;
-    margin-bottom: 2rem;
-  }
+   */
   
   footer {
     background-color: #f5f5f5;
     background-color: #f9c426;
     padding: 1rem;
     text-align: center;
-    grid-area: footer;
   }
   
-  /* Adjust the size of the logo image */
   .header img {
     min-width: 250px !important;
     height: auto;
     background-color: #f9c426;
   }
+  
   .footer img {
-    /* width: 10%; */
     height: 2%;
     max-width: 5%;
-    /* display: block; */
   }
-
-  /* .jumbotron {
-    font-size: large;
-    background-color: #f9c426;
-  } */
   
-  /* Add styling for headings */
   h1 {
     font-size: 50rem;
     font-weight: bold;
@@ -119,35 +94,64 @@
     font-weight: bold;
   }
   
-  /* New styles for heading 2 and 3 */
   h2,
   h3 {
     width: 100%;
   }
   
-  /* @media (min-width: 768px) {
-    h2,
-    h3 {
-      width: 50%;
-    }
-  } */
-
-  .container-fluid{
+  .container-fluid {
     background-color: #f9c426;
   }
-
-  .btn{
+  
+  .btn {
     background-color: #425f59 !important;
     box-shadow: 0 7px rgba(0, 0, 0, 0.3);
   }
-  .btn:hover{
+  
+  .btn:hover {
     transform: scale(110%) !important;
     box-shadow: 0 10px rgba(0, 0, 0, 0.3);
   }
-
-  .custom-text-color{
+  
+  .custom-text-color {
     color: none !important;
   }
-
+  
+  @media (min-width: 768px) {
+    /* Adjust the layout for screens wider than 768px */
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      text-align: left;
+    }
+  
+    nav ul {
+      text-align: right;
+      font-size: 100%;
+    }
+  
+    nav ul li {
+      margin: 0;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+  
+    article {
+      margin-bottom: 0;
+    }
+  
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
   
   
